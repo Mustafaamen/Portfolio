@@ -1,26 +1,25 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import route from './../../assets/route.jpg';
-import { Modal } from 'react-responsive-modal'; // استيراد المودال
-import 'react-responsive-modal/styles.css'; // استيراد الأنماط الخاصة بالمودال
-import './Certificates.css'; // استيراد الأنماط الخاصة بالصفحة
+import { Modal } from 'react-responsive-modal';
+import 'react-responsive-modal/styles.css';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+import './Certificates.css';
 
 const Certificates = () => {
-  const [open, setOpen] = useState(false); // حالة لفتح المودال
+  const [open, setOpen] = useState(false);
 
-  // دالة لفتح المودال
-  const openModal = () => {
-    setOpen(true);
-  };
+  useEffect(() => {
+    AOS.init({ duration: 1200, easing: 'ease-in-out' });
+  }, []);
 
-  // دالة لإغلاق المودال
-  const closeModal = () => {
-    setOpen(false);
-  };
+  const openModal = () => setOpen(true);
+  const closeModal = () => setOpen(false);
 
   return (
     <>
-      <section className='contact section'>
-        <h2 className='section__title'>
+      <section className="contact section">
+        <h2 className="section__title" data-aos="fade-up">
           My <span>Certificates</span>
         </h2>
 
@@ -29,16 +28,17 @@ const Certificates = () => {
             src={route}
             alt="Certificate"
             className="certificate__image"
-            onClick={openModal} // عند الضغط على الصورة يتم فتح المودال
+            data-aos="zoom-in"
+            onClick={openModal}
           />
         </div>
       </section>
 
-      {/* المودال لعرض الصورة بحجم أكبر */}
       <Modal open={open} onClose={closeModal} center>
-        
-        <img src={route} alt="Certificate" className="modal__image" />
-        <h2>I have completed a Front-End Diploma at Root Academy</h2>
+        <div data-aos="fade-up">
+          <img src={route} alt="Certificate" className="modal__image" />
+          <h2 data-aos="fade-down">I have completed a Front-End Diploma at Root Academy</h2>
+        </div>
       </Modal>
     </>
   );

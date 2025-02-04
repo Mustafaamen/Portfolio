@@ -72,6 +72,8 @@
 // }
 
 // export default About
+
+
 import React from 'react';
 import Info from '../Info';
 import CV from '../../assets/CV Mustafa Amen Elhadad.pdf';
