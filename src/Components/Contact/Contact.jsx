@@ -1,100 +1,114 @@
-import React, { useEffect } from 'react';
-
-import {
-  FaEnvelopeOpen,
-  FaPhoneSquareAlt,
-  FaFacebookF,
-  FaInstagram,
-  FaTwitter,
-  FaLinkedinIn,
-  FaWhatsapp
-} from 'react-icons/fa';
+import React from 'react';
+import { FaEnvelopeOpen, FaPhoneSquareAlt, FaWhatsapp, FaFacebookF, FaInstagram, FaTwitter, FaLinkedinIn } from 'react-icons/fa';
 import { FiSend } from 'react-icons/fi';
-import "./Contact.css";
+import { motion } from 'framer-motion';
+import './Contact.css';
 
 const Contact = () => {
-
-
   return (
-    <section className='contact section'>
-      <h2 className='section__title' data-aos="fade-up">
-        Get In <span>Touch </span>
-      </h2>
+    <motion.section 
+      className="contact section"
+      initial={{ opacity: 0, y: 50 }}
+      animate={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.8 }}
+    >
+      <h2 className="section__title">Get In <span>Touch</span></h2>
 
       <div className="contact__container container grid">
-        <div className="contact__data">
-          <h3 className="contact__title">Don't be Shy !</h3>
+        <motion.div 
+          className="contact__data"
+          initial={{ opacity: 0, x: -50 }}
+          animate={{ opacity: 1, x: 0 }}
+          transition={{ duration: 0.8, delay: 0.2 }}
+        >
+          <h3 className="contact__title">Don't be Shy!</h3>
           <p className="contact__desc">Talk to me</p>
+
           <div className="contact__info">
-            <div className="info__item border" >
-              <FaEnvelopeOpen className='info__icon' />
-              <div>
-                <span className="info__title">Mail Me</span>
-                <a href="https://mail.google.com/mail/u/0/?tab=rm&ogbl">
-                  <h4 className="info__desc">Mustafaelhadad241@gmail.com</h4>
-                </a>
-              </div>
-            </div>
-
-            <div className="info__item border" >
-              <FaPhoneSquareAlt className='info__icon' />
-              <div>
-                <span className="info__title">Call Me</span>
-                <a href="tel:+966553132969">
-                  <h4 className="info__desc">+966553132969</h4>
-                </a>
-              </div>
-            </div>
-
-            <div className="info__item border">
-              <FaWhatsapp className='info__icon' />
-              <div>
-                <span className="info__title">Whatsapp Me</span>
-                <a href="https://wa.me/+966553132969" target="_blank" rel="noopener noreferrer">
-                  <h4 className="info__desc">Whatsapp</h4>
-                </a>
-              </div>
-            </div>
+            {[
+              {
+                Icon: FaEnvelopeOpen,
+                title: "Mail Me",
+                desc: "Mustafaelhadad241@gmail.com",
+                link: "https://mail.google.com/mail/u/0/?tab=rm&ogbl"
+              },
+              {
+                Icon: FaPhoneSquareAlt,
+                title: "Call Me",
+                desc: "+966553132969",
+                link: "tel:+966553132969"
+              },
+              {
+                Icon: FaWhatsapp,
+                title: "Whatsapp Me",
+                desc: "Whatsapp",
+                link: "https://wa.me/+966553132969"
+              }
+            ].map((item, index) => (
+              <motion.div 
+                className="info__item border" 
+                key={index}
+                whileHover={{ scale: 1.05 }}
+              >
+                <item.Icon className="info__icon" />
+                <div>
+                  <span className="info__title">{item.title}</span>
+                  <a href={item.link} target="_blank" rel="noopener noreferrer">
+                    <h4 className="info__desc">{item.desc}</h4>
+                  </a>
+                </div>
+              </motion.div>
+            ))}
           </div>
 
-          <div className="contact__social" >
-            <a href="https://www.facebook.com/elhdad20155?locale=ar_AR" className="contact__social__link">
-              <FaFacebookF />
-            </a>
-            <a href="https://www.instagram.com/muelhadad1/" className="contact__social__link">
-              <FaInstagram />
-            </a>
-            <a href="https://x.com/muelhadad1" className="contact__social__link">
-              <FaTwitter />
-            </a>
-            <a href="https://www.linkedin.com/in/mustafa-elhadad/" className="contact__social__link">
-              <FaLinkedinIn />
-            </a>
+          <div className="contact__social">
+            {[
+              { href: "https://www.facebook.com/elhdad20155?locale=ar_AR", Icon: FaFacebookF },
+              { href: "https://www.instagram.com/muelhadad1/", Icon: FaInstagram },
+              { href: "https://x.com/muelhadad1", Icon: FaTwitter },
+              { href: "https://www.linkedin.com/in/mustafa-elhadad/", Icon: FaLinkedinIn }
+            ].map((item, index) => (
+              <motion.a 
+                key={index} 
+                href={item.href} 
+                className="contact__social__link" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                whileHover={{ scale: 1.2 }}
+              >
+                <item.Icon />
+              </motion.a>
+            ))}
           </div>
-        </div>
+        </motion.div>
 
-        <form className="coantact__form" >
+        <motion.form 
+          className="contact__form"
+          initial={{ opacity: 0, x: 50 }}
+          animate={{ opacity: 1, x: 0 }}
+          transition={{ duration: 0.8, delay: 0.4 }}
+        >
           <div className="form__input__group">
-            <div className="form__input__div">
-              <input type="text" className="form__control" placeholder="Name" />
-            </div>
-            <div className="form__input__div">
-              <input type="email" className="form__control" placeholder="Email" />
-            </div>
-            <div className="form__input__div">
-              <input type="text" className="form__control" placeholder="Subject" />
-            </div>
+            {['Name', 'Email', 'Subject'].map((placeholder, index) => (
+              <div className="form__input__div" key={index}>
+                <input type={placeholder === 'Email' ? 'email' : 'text'} className="form__control" placeholder={placeholder} />
+              </div>
+            ))}
           </div>
 
           <div className="form__input__div">
-            <textarea placeholder='Message' className="form__control textarea" name="" id=""></textarea>
+            <textarea placeholder="Message" className="form__control textarea"></textarea>
           </div>
-          <button className='button'>
-            Send Message <span className="button__icon contact__button__icon"> <FiSend /> </span>
-          </button>
-        </form>
+
+          <motion.button 
+            className="button"
+            whileHover={{ scale: 1.05 }}
+          >
+            Send Message <span className="button__icon contact__button__icon"><FiSend /></span>
+          </motion.button>
+        </motion.form>
       </div>
-    </section>
+    </motion.section>
   );
 };
 
