@@ -25,7 +25,7 @@ const Contact = () => {
   return (
     <section className='contact section'>
       <h2 className='section__title' data-aos="fade-up">
-        Get In <span>Touch</span>
+        Get In <span>Touch Mustafa</span>
       </h2>
 
       <div className="contact__container container grid">
