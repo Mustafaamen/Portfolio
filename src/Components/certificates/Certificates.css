@@ -1,0 +1,26 @@
+.certificates__container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .certificate__image {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .certificate__image:hover {
+    transform: scale(1.05);
+  }
+  
+  /* يمكنك تعديل حجم الصورة في المودال حسب الحاجة */
+  .modal__image {
+    width: 100%;
+    max-height: 80vh;
+    object-fit: contain;
+  }
+  

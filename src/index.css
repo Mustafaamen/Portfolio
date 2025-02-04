@@ -1,0 +1,353 @@
+@import url("https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css");
+
+@media screen and (max-width :1400px) {
+    .container {
+        max-width: calc(100% -180px) !important;
+    }
+}
+
+@media screen and (max-width :1200px) {
+    .grid {
+        gap: 20px !important;
+    }
+
+    .home {
+        padding-right: 40px !important;
+    }
+
+    .home__title {
+        font-size: var(--big-font-size) !important;
+
+    }
+
+    .home__description {
+        font-size: var(--small-font-size) !important;
+    }
+
+    .stats__title {
+        padding-left: 35px !important;
+    }
+
+    .stats__title::before {
+        width: 22px !important;
+
+    }
+
+    .skills__container {
+        row-gap: 32px !important;
+    }
+
+    .progress__circle {
+        width: 90px !important;
+        height: 90px !important;
+    }
+
+    .skills__title {
+        margin-top: 20px !important;
+    }
+
+    .resume__icon {
+        width: 35px !important;
+        height: 35px !important;
+        line-height: 37px !important;
+    }
+
+    .resume__item {
+        padding-left: 50px !important;
+
+    }
+
+    .portfolio__model__content {
+        max-width: 600px !important;
+    }
+
+    .model__close {
+        width: 40px !important;
+        height: 40px !important;
+    }
+
+    .form__input__group {
+        grid-template-columns: repeat(2, 1fr) !important;
+        column-gap: 24px !important;
+    }
+
+    .form__input__group .form__input__div:last-child {
+        grid-column: 1/-1 !important;
+    }
+
+    .form__input__div {
+        margin-bottom: 24px !important;
+    }
+}
+
+@media screen and (max-width :1024px) {
+    .container {
+        max-width: 720px !important;
+
+    }
+
+    .home {
+        padding: 20px !important;
+        grid-template-columns: 5fr 7fr !important;
+    }
+
+    .home__data {
+        padding-right: 0 !important;
+    }
+
+    .section {
+        padding-block: 50px !important;
+    }
+
+    .section__title {
+        margin-bottom: 40px !important;
+    }
+
+    .about__container,
+    .resume__container,
+    .contact__container {
+        grid-template-columns: 1fr !important;
+
+    }
+
+    .about__container {
+        row-gap: 40px !important;
+
+    }
+
+    .subtitle__center {
+        margin-bottom: 45px !important;
+
+    }
+
+    .skills__container {
+        grid-template-columns: repeat(3, 1fr) !important;
+    }
+
+    .resume__container {
+        row-gap: 45px !important;
+    }
+
+    .resume__item:not(:last-child) {
+        margin-bottom: 45px !important;
+    }
+
+    .separator {
+        margin: 65px auto 50 !important;
+    }
+
+    .portfolio__container {
+        grid-template-columns: repeat(2, 1fr) !important;
+    }
+
+    .contact__container {
+        row-gap: 48px !important;
+    }
+
+    .model__close {
+        top: 5px !important;
+        left: 5px !important;
+    }
+
+}
+
+@media screen and (max-width :768px) {
+    /* .grid {
+            display: block !important;
+        } */
+    /* .auto__play span {
+            font-size: 30px;
+        } */
+
+    .home {
+        grid-template-columns: 1fr !important;
+        justify-items: center !important;
+        row-gap: 10px !important;
+        /* padding-inline: 100px; */
+    }
+
+
+    .contact__sociall {
+        display: none !important;
+    }
+
+    .color__block {
+        display: none !important;
+    }
+
+    .home__img {
+        width: 270px !important;
+        height: 270px !important;
+        border-radius: 50% !important;
+        margin-top: auto !important;
+
+    }
+
+    .relative {
+        padding-inline: 20px !important;
+    }
+
+
+    .home__content {
+        max-width: 500px !important;
+        text-align: center !important;
+        margin: auto !important;
+    }
+
+    .home__title {
+        padding-left: 0 !important;
+
+    }
+
+    .home__title::before {
+        all: unset !important;
+    }
+
+    .home__title span {
+        display: block !important;
+    }
+
+    .container {
+        max-width: 540px !important;
+    }
+
+    .portfolio__model__content {
+        padding: 25px 20px !important;
+    }
+
+    .model__close {
+        top: 5px !important;
+        left: 5px !important;
+    }
+
+    .section__title {
+        padding-block: 60px !important;
+    }
+   
+    
+    
+  
+}
+
+@media screen and (max-width :576px) {
+    .nav__toggle {
+        top: 20px !important;
+        right: 15px !important;
+    }
+
+    .nav__link {
+        column-gap: 20px !important;
+    }
+
+    .nav__icon,
+    .nav__name {
+        font-size: var(--h3-font-size) !important;
+    }
+
+    .skills__container {
+        grid-template-columns: repeat(2, 1fr) !important;
+    }
+
+    .portfolio__container {
+        grid-template-columns: 1fr !important;
+    }
+
+    .model__list {
+        grid-template-columns: 1fr !important;
+    }
+
+    .model__img {
+        height: 300px;
+    }
+
+    .form__input__group {
+        grid-template-columns: 1fr !important;
+    }
+
+}
+
+@media screen and (max-width :450x) {
+
+    .home__img {
+        display: none !important;
+    }
+
+    .home__content {
+        margin-block: auto !important;
+        text-align: left !important;
+
+    }
+
+    .home__title {
+        font-size: var(--h1-font-size) !important;
+    }
+
+    .home__description {
+        text-align: justify !important;
+    }
+
+    .info__title {
+        display: block !important;
+        margin-bottom: 4px !important;
+    }
+
+    .stats__box {
+        padding: 15px 15px 25px 20px !important;
+    }
+}
+
+
+
+
+
+
+.tech-icons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    padding: 20px;
+
+}
+
+.tech-icons i {
+    font-size: 70px;
+    transition: transform 0.3s ease, color 0.3s ease;
+    cursor: pointer;
+
+}
+
+.tech-icons i:hover {
+    transform: scale(1.2);
+    color: var(--first-color);
+}
+
+.flexx {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.margin {
+    margin-top: 40px;
+}
+
+
+.social-icons {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    padding: 20px;
+}
+
+.social-icons a {
+    font-size: 40px;
+    transition: transform 0.3s ease;
+    text-decoration: none;
+}
+
+.social-icons a:hover {
+    transform: scale(1.2);
+}

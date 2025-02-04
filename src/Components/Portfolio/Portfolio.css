@@ -1,0 +1,145 @@
+.portfolio__container{
+grid-template-columns: repeat(3 , 1fr);}
+
+
+
+
+.portfolio__item{
+    position: relative
+    ;
+    border-radius: 10px;
+    overflow: hidden;
+    cursor: pointer;
+
+
+}
+.portfolio__img{
+    height: 250px;
+    width: 100%;
+    object-fit: cover;
+}
+.portfolio__hover{
+    position: absolute;
+    inset: 0;
+    background-color: var(--first-color);
+    display: grid;
+    place-items: center;
+    opacity: 0;
+    transition: all .3s ease;
+}
+
+.portfolio__item:hover .portfolio__hover{
+opacity: .5;
+}
+.portfolio__title{
+    color: var(--text-white);
+    font-size: var(--large-font-size);
+    font-weight: var(--weight-500);
+    transform: translateY(-20px);
+    transition: all .5s ease;
+
+}
+
+.portfolio__item:hover .portfolio__title{
+    transform: translateY(0);
+
+}
+
+
+.portfolio__model{
+    position: fixed;
+    inset: 0;
+    background-color: hsla(0, 0%, 0%, .7);
+    z-index: 1000;
+    display: grid;
+    place-items: center;
+    padding: 15px;
+    z-index: 99999 !important;
+}
+
+
+
+.portfolio__model__content{
+    background-color: var(--container-color);
+    max-width: 650px;
+    width: 100%;
+    padding: 32px;
+    border-radius: 10px;
+    position: relative;
+    
+    
+}
+.model__close{
+    
+    position: absolute;
+top: -3.5%;
+right: -8.5%;
+width: 50px;
+height: 50px;
+filter: invert(.8);
+}
+
+.model__img{
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+}
+.model__title{
+    text-align: center;
+    color: var(--first-color);
+    font-size: var(--h2-font-size);
+    letter-spacing: 2px;
+    margin-bottom: 24px;
+}
+.model__list{
+    grid-template-columns: repeat(2,1fr);
+    row-gap: 10px !important;
+    margin-bottom: 24px;
+}
+.model__item{
+    display: flex;
+    align-items: center;
+    column-gap: 8px;
+}
+.item__icon{
+    display: flex;
+}
+.item__title,.item__desc{
+    font-size: var( --small-font-size);
+    color: var(--title-color);
+}
+.item__desc{
+    font-weight: var(--weight-600);
+}
+
+
+
+
+
+   .eye-icon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #ffffff;
+    background: rgba(0, 0, 0, 0.8);
+    padding: 15px;
+    border-radius: 50%;
+    opacity: 0;
+    transition: opacity 0.4s ease, transform 0.3s ease;
+    cursor: pointer;
+    font-size: 2rem;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
+  }
+  
+  .image-container:hover .eye-icon {
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(1.1);
+  }
+  
+  .eye-icon:hover {
+    background: rgba(255, 255, 255, 0.9);
+    color: #000;
+    transform: translate(-50%, -50%) scale(1.2);
+  }
+  

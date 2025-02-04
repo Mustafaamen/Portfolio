@@ -1,0 +1,264 @@
+/* FONTS */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* Variabls */
+
+:root {
+    /* Colors */
+    /* HSL => hue . saturation , lightness */
+    --first-color: hsl(271, 76%, 53%);
+    --title-color: hsl(0, 0%, 40%);
+    --text-color: hsl(0, 0%, 50%);
+    --body-color: hsl(0, 0%, 100%);
+    --container-color: hsl(0, 0%, 93%);
+    --border-color: hsl(0, 0%, 87%);
+    --text-white: #fff;
+
+
+
+    /* Fonts */
+    --body-font: 'Open Sans', sans-serif;
+    --second-font: 'Poppins', sans-serif;
+    --big-font-size: 56px;
+    --h1-font-size: 50px;
+    --h2-font-size: 32px;
+    --h3-font-size: 24px;
+    --large-font-size: 18px;
+    --normal-font-size: 16px;
+    --small-font-size: 15px;
+    --smaller-font-size: 14px;
+    --tiny-font-size: 12px;
+
+    /* font weight */
+
+    --weight-400: 400;
+    --weight-500: 500;
+    --weight-600: 600;
+    --weight-700: 700;
+    --weight-800: 800;
+
+}
+
+
+
+
+/* Base */
+/* +Responseve design */
+@media screen and (max-width :1000px) {
+    :root{
+        --body-font: 'Open Sans', sans-serif;
+        --second-font: 'Poppins', sans-serif;
+        --big-font-size: 36px;
+        --h1-font-size: 32px;
+        --h2-font-size: 24px;
+        --h3-font-size: 20px;
+        --large-font-size: 16px;
+        --normal-font-size: 15px;
+        --small-font-size: 14px;
+        --smaller-font-size: 13px;
+        --tiny-font-size: 11px;
+    }
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+body,
+input,
+textarea {
+    font-family: var(--body-font);
+    font-size: var(--normal-font-size);
+    font-weight: var(--weight-500);
+}
+
+body {
+    background-color: var(--body-color);
+    color: var(--text-color);
+}
+
+h1,
+h2,
+h3,
+h4 {
+    font-family: var(--second-font);
+    color: var(--title-color);
+    font-weight: var(--weight-700);
+}
+
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+
+}
+
+button,
+input,
+textarea {
+    background-color: transparent;
+    border: none;
+    outline: none;
+
+}
+
+img {
+    max-width: 100%;
+}
+
+
+
+
+/*======================== REUSEBLE CSS */
+.grid {
+    display: grid;
+    gap: 30px;
+}
+
+.container{
+    max-width: 1140px;
+    margin-inline: auto;
+    padding-inline: 15px;
+}
+
+.section {
+    padding-block: 70px;
+    position: relative;
+    z-index: 50;
+}
+.section__title{
+    font-size: var(--big-font-size);
+    font-weight: var(--weight-800);
+    text-align: center;
+    margin-bottom: 70px;
+}
+
+.section__title span{
+    color: var(--first-color);
+}
+
+
+.button {
+    display: inline-block;
+    color: var(--title-color);
+    border: 1px solid var(--first-color);
+border-radius: 35px;
+    padding: 15px 70px 15px 35px;
+    font-family: var(--second-font) ;
+    font-size: var(--small-font-size);
+    font-weight: var(--weight-500);
+    position: relative;
+    overflow: hidden ;
+    transition: all 0.25s ease-in-out     ;
+
+}
+
+.button:hover{
+    color: var(--text-white);
+}
+
+.button::before{
+    content: '';
+    position: absolute;
+    inset: 0;
+    background-color: var(--first-color);
+    transform: translateX(100%);
+    z-index: -1;
+    transition: all 0.3s ease-out ;
+}
+
+.button:hover::before{
+transform: translateX(0);
+}
+.button__icon{
+    background-color: var(--first-color);
+    position: absolute;
+    inset-block: -2px ;
+    right: 0;
+    width: 55px;
+    border-radius: 50%;
+    color: var(--text-white);
+    text-align: center;
+    line-height: 60px;
+}
+
+
+
+
+/* footer++++++++++++++++++++++++++ */
+footer {
+    background-color: #2C3E50; /* لون خلفية الفوتر */
+    color: #ECF0F1; /* لون النص */
+    padding: 40px 0; /* المسافة من الأعلى والأسفل */
+    text-align: center;
+  }
+  
+  .footer-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+  
+  .contact-info {
+    flex: 1;
+    padding-right: 20px;
+  }
+  
+  .contact-info p {
+    font-size: 16px;
+    margin: 0;
+  }
+  
+  .contact-info a {
+    color: #ECF0F1;
+    text-decoration: none;
+  }
+  
+  .contact-info a:hover {
+    text-decoration: underline;
+  }
+  
+  .social-media {
+    flex: 1;
+    padding-left: 20px;
+  }
+  
+  .social-media a {
+    color: #ECF0F1;
+    margin: 0 15px;
+    font-size: 18px;
+    text-decoration: none;
+  }
+  
+  .social-media a:hover {
+    color: #3498DB; /* تغيير اللون عند التمرير */
+  }
+  
+  .copyright {
+    flex: 1;
+    font-size: 14px;
+  }
+  
+  @media (max-width: 768px) {
+    .footer-container {
+      flex-direction: column;
+      align-items: center;
+    }
+    .contact-info, .social-media {
+      padding: 0;
+    }
+  }
+  
+
+

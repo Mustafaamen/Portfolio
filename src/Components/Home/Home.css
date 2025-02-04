@@ -1,0 +1,137 @@
+.home {
+    grid-template-columns: 4.32fr 7.68fr;
+    align-items: center;
+    /* background-color: var(--first-color); */
+    padding: 40px;
+    height: 100vh;
+    /* overflow: hidden; */
+}
+
+.home__img {
+    height: 100%;
+    object-fit: cover;
+    border-radius: 30px;
+    box-shadow: 0 0 8px hsla(0, 0%, 0%, 0.3);
+    z-index: 1;
+    
+    
+}
+.relative{
+    position: relative !important;
+    overflow: hidden;
+
+}
+.img__iconnnn{
+    position: absolute !important;
+    top: 40px;
+    right:-120px ;
+    transition: all .5s ease !important;
+}
+
+.relative:hover .img__iconnnn{
+    right: 80px !important;
+    
+}
+
+
+
+
+
+.contact__sociall {
+    display: flex;
+    row-gap: 16px;
+    align-items: center;
+    flex-direction: column;
+    /* transform: translateX; */
+}
+
+.contact__sociall__link {
+    background-color: var(--container-color);
+    color: var(--title-color);
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 44px;
+    transition: all 0.3s ease;
+}
+.contact__sociall__link:hover{
+    background-color: var(--first-color);
+    color: var(--text-white);
+}
+
+
+
+
+/* ================ */
+
+.home__data {
+
+    /* background-color: var(--first-color); */
+    max-width: 600px;
+    margin-inline: auto ;
+    padding-top: 20px;
+
+}
+
+.home__title{
+    position: relative;
+    font-size: var(--h1-font-size);
+    line-height: 1.24;
+    padding-left: 60px;
+}
+
+.home__title span{
+    color: var(--first-color);
+}
+
+.home__title::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 22%;
+    width: 40px;
+    height: 5px;
+    border-radius: 10px;
+    background-color: var(--first-color);
+}
+
+.home__description{
+    line-height: 2.125;
+    margin-block: 16px 32px;
+
+}
+
+.color__block{
+    position: fixed;
+    height: 200%;
+    width: 100%;
+    background-color: var(--first-color );
+    top: -50%;
+    left: -83% ;
+    transform: rotate(-15deg);
+    opacity: .3;
+    z-index: -10;
+}
+.auto__play span {
+    font-size: 32px;
+    font-weight: bold;
+    font-family: Arial, sans-serif;
+    display: inline-block;
+    white-space: nowrap; /* عدم التفاف النص */
+  }
+  
+  @media screen and (max-width: 768px) {
+    .auto__play span {
+      font-size: 24px;
+      
+    }
+  }
+  
+  @media screen and (max-width: 480px) {
+    .auto__play span {
+      font-size: 18px;
+    }
+  }
+  
+  
