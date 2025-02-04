@@ -1,27 +1,60 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import { portfolio } from '../../data';
 import PortfolioItem from '../PortfolioItem';
 import './Portfolio.css';
+import { motion } from 'framer-motion';
 
 const Portfolio = () => {
-  
+  const containerVariants = {
+    hidden: { opacity: 0, y: 50 },
+    visible: {
+      opacity: 1,
+      y: 0,
+      transition: { duration: 0.6, ease: 'easeOut', staggerChildren: 0.2 },
+    },
+  };
+
+  const itemVariants = {
+    hidden: { opacity: 0, scale: 0.9 },
+    visible: {
+      opacity: 1,
+      scale: 1,
+      transition: { duration: 0.4, ease: 'easeOut' },
+    },
+  };
+
+  const titleVariants = {
+    hidden: { opacity: 0, y: -30 },
+    visible: {
+      opacity: 1,
+      y: 0,
+      transition: { duration: 0.7, ease: 'easeOut' },
+    },
+  };
 
   return (
     <section className='portfolio section'>
-      <h2 className="section__title" data-aos="fade-up">
+      <motion.h2
+        className="section__title"
+        initial="hidden"
+        animate="visible"
+        variants={titleVariants}
+      >
         My <span>Projects</span>
-      </h2>
+      </motion.h2>
 
-      <div className="portfolio__container container grid">
+      <motion.div
+        className="portfolio__container container grid"
+        initial="hidden"
+        animate="visible"
+        variants={containerVariants}
+      >
         {portfolio.map((item) => (
-          <div
-            key={item.id}
-       
-          >
+          <motion.div key={item.id} variants={itemVariants}>
             <PortfolioItem {...item} />
-          </div>
+          </motion.div>
         ))}
-      </div>
+      </motion.div>
     </section>
   );
 };
