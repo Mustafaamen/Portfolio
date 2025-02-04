@@ -2,13 +2,9 @@ import React, { useEffect } from 'react';
 import { portfolio } from '../../data';
 import PortfolioItem from '../PortfolioItem';
 import './Portfolio.css';
-import AOS from 'aos';
-import 'aos/dist/aos.css';
 
 const Portfolio = () => {
-  useEffect(() => {
-    AOS.init({ duration: 1000, easing: 'ease-in-out' });
-  }, []);
+  
 
   return (
     <section className='portfolio section'>
@@ -17,11 +13,10 @@ const Portfolio = () => {
       </h2>
 
       <div className="portfolio__container container grid">
-        {portfolio.map((item, index) => (
+        {portfolio.map((item) => (
           <div
             key={item.id}
-            data-aos={index % 2 === 0 ? 'fade-right' : 'fade-left'}
-            data-aos-delay={`${index * 100}`}
+       
           >
             <PortfolioItem {...item} />
           </div>
