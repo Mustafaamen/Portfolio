@@ -7,30 +7,33 @@
     /* overflow: hidden; */
 }
 
+
+
 .home__img {
     height: 100%;
     object-fit: cover;
     border-radius: 30px;
     box-shadow: 0 0 8px hsla(0, 0%, 0%, 0.3);
     z-index: 1;
-    
-    
+
 }
-.relative{
+
+.relative {
     position: relative !important;
     overflow: hidden;
 
 }
-.img__iconnnn{
+
+.img__iconnnn {
     position: absolute !important;
     top: 40px;
-    right:-120px ;
+    right: -120px;
     transition: all .5s ease !important;
 }
 
-.relative:hover .img__iconnnn{
+.relative:hover .img__iconnnn {
     right: 80px !important;
-    
+
 }
 
 
@@ -55,7 +58,8 @@
     line-height: 44px;
     transition: all 0.3s ease;
 }
-.contact__sociall__link:hover{
+
+.contact__sociall__link:hover {
     background-color: var(--first-color);
     color: var(--text-white);
 }
@@ -69,23 +73,23 @@
 
     /* background-color: var(--first-color); */
     max-width: 600px;
-    margin-inline: auto ;
+    margin-inline: auto;
     padding-top: 20px;
 
 }
 
-.home__title{
+.home__title {
     position: relative;
     font-size: var(--h1-font-size);
     line-height: 1.24;
     padding-left: 60px;
 }
 
-.home__title span{
+.home__title span {
     color: var(--first-color);
 }
 
-.home__title::before{
+.home__title::before {
     content: '';
     position: absolute;
     left: 0;
@@ -96,42 +100,50 @@
     background-color: var(--first-color);
 }
 
-.home__description{
+.home__description {
     line-height: 2.125;
     margin-block: 16px 32px;
 
 }
 
-.color__block{
+.color__block {
     position: fixed;
     height: 200%;
     width: 100%;
-    background-color: var(--first-color );
+    background-color:#8C3E97;
     top: -50%;
-    left: -83% ;
+    left: -83%;
     transform: rotate(-15deg);
-    opacity: .3;
+    opacity: .4;
     z-index: -10;
 }
+
 .auto__play span {
     font-size: 32px;
     font-weight: bold;
     font-family: Arial, sans-serif;
     display: inline-block;
-    white-space: nowrap; /* عدم التفاف النص */
-  }
-  
-  @media screen and (max-width: 768px) {
+    white-space: nowrap;
+    /* عدم التفاف النص */
+}
+
+@media screen and (max-width: 768px) {
     .auto__play span {
-      font-size: 24px;
-      
+        font-size: 24px;
+
     }
-  }
-  
-  @media screen and (max-width: 480px) {
+}
+
+@media screen and (max-width: 480px) {
     .auto__play span {
-      font-size: 18px;
+        font-size: 18px;
     }
-  }
-  
-  
+}
+
+
+
+
+
+
+
+

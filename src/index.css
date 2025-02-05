@@ -152,18 +152,14 @@
 }
 
 @media screen and (max-width :768px) {
-    /* .grid {
-            display: block !important;
-        } */
-    /* .auto__play span {
-            font-size: 30px;
-        } */
+
 
     .home {
         grid-template-columns: 1fr !important;
         justify-items: center !important;
+        align-items: center !important;
         row-gap: 10px !important;
-        /* padding-inline: 100px; */
+       
     }
 
 
@@ -176,12 +172,14 @@
     }
 
     .home__img {
+
         width: 270px !important;
         height: 270px !important;
         border-radius: 50% !important;
-        margin-top: auto !important;
+        /* margin-top: 200px !important; */
 
     }
+   
 
     .relative {
         padding-inline: 20px !important;

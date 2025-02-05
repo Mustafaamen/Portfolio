@@ -5,13 +5,7 @@ const Footer = () => {
     <>
       <footer>
   <div class="footer-container">
-    {/* <div class="contact-info">
-      <p>   <a href="mailto:Mustafaelhadad241@gmail.com">Mustafaelhadad241@gmail.com</a></p>
-    </div> */}
-    {/* <div class="social-media">
-      <a href="https://www.linkedin.com/in/yourprofile" target="_blank"><i class="fa-brands fa-linkedin"></i> LinkedIn</a>
-      <a href="https://github.com/yourprofile" target="_blank"><i class="fa-brands fa-github"></i>GitHub</a>
-    </div> */}
+ 
      <div className="social-icons">
      <a href="https://www.facebook.com/elhdad20155?locale=ar_AR" target="_blank" rel="noreferrer">
               <i className="fa-brands fa-facebook" style={{ color: "#1877F2" }}></i>
@@ -30,7 +24,7 @@ const Footer = () => {
             </a>
     </div>
     <div class="copyright">
-      <p>copyright 2025 © - Mustafa El-hadad</p>
+      <p>copyright 2025 © - Mustafa El-hadad </p> 
     </div>
   </div>
 </footer>

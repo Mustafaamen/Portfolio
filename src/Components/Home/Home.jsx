@@ -46,6 +46,7 @@ import { motion } from 'framer-motion';
 import Typed from 'typed.js';
 import "./Home.css";
 
+
 const Home = () => {
   useEffect(() => {
     const options = {
@@ -99,6 +100,7 @@ const Home = () => {
 
         <div className="home__content">
           <div className="home__data">
+           
             {/* Title Animation */}
             <motion.h1
               className="home__title"
@@ -136,6 +138,7 @@ const Home = () => {
           </div>
         </div>
         <div className="color__block"></div>
+      
       </section>
     </>
   );

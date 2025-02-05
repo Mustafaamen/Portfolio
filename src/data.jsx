@@ -16,6 +16,7 @@ import Work4 from './assets/work-4.png';
 import Work5 from './assets/work-5.png';
 import Work6 from './assets/work-6.png';
 import Work7 from './assets/work-7.png';
+import Work8 from './assets/work-8.png';
 
 import Theme1 from './assets/purple.png';
 import Theme2 from './assets/red.png';
@@ -432,6 +433,64 @@ export const skills = [
         icon: <FiExternalLink />,
         title: 'Preview : ',
         desc: 'https://mustafaamen.github.io/Crud-Operations/',
+      },
+    ],
+  },
+  {
+    id: 8,
+    img: Work8,
+    title: 'Exam && JQ',
+    link: 'https://mustafaamen.github.io/exam-JQ/',
+    details: [
+      {
+        icon: <FiFileText />,
+        title: 'Project : ',
+        desc: 'Jquery',
+      },
+      {
+        icon: <FiUser />,
+      
+        title: 'Client : ',
+        desc: 'freelance',
+      },
+      {
+        icon: <FaCode />,
+        title: 'Language : ',
+        desc: 'Bootstrab ,Jquery ',
+      },
+      {
+        icon: <FiExternalLink />,
+        title: 'Preview : ',
+        desc: 'https://mustafaamen.github.io/exam-JQ/',
+      },
+    ],
+  },
+  {
+    id: 8,
+    img: Work8,
+    title: 'Exam && JQ',
+    link: 'https://mustafaamen.github.io/exam-JQ/',
+    details: [
+      {
+        icon: <FiFileText />,
+        title: 'Project : ',
+        desc: 'Jquery',
+      },
+      {
+        icon: <FiUser />,
+      
+        title: 'Client : ',
+        desc: 'freelance',
+      },
+      {
+        icon: <FaCode />,
+        title: 'Language : ',
+        desc: 'Bootstrab ,Jquery ',
+      },
+      {
+        icon: <FiExternalLink />,
+        title: 'Preview : ',
+        desc: 'https://mustafaamen.github.io/exam-JQ/',
       },
     ],
   },
