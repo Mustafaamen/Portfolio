@@ -93,13 +93,13 @@ export const personalInfo = [
   {
     id: 6,
     title: 'Address : ',
-    description: 'Saudi Arabia Riyadh ',
+    description: 'Saudi - Riyadh ',
   },
 
   {
     id: 7,
     title: 'Phone : ',
-    description: '+966553132969',
+    description: '0553132969',
   },
 
   {
@@ -154,7 +154,7 @@ export const resume = [
     icon: <FaBriefcase />,
     year: '2024 - PRESENT',
     title: 'Front-End Developer <span> Freelance </span>',
-    desc: 'Lorem ipsum dolor sit amet, consectetur tempor incididunt ut labore adipisicing elit,',
+    desc:"As a Freelance Front-End Developer, I specialize in crafting responsive, interactive, and user-friendly websites. With expertise in HTML, CSS, JavaScript, and React, I focus on delivering high-quality digital solutions tailored to client needs. Whether it's a personal project or a business website, I work closely with clients to ensure seamless user experiences and modern design. My goal is to transform ideas into functional, beautiful web applications that engage users and drive results."
   },
 
   {
@@ -163,7 +163,7 @@ export const resume = [
     icon: <FaBriefcase />,
     year: '2024 - 2024',
     title: 'UI Developer  <span> Delta Capital </span>',
-    desc: 'Lorem incididunt dolor sit amet, consectetur eiusmod dunt doldunt dol elit, tempor incididunt',
+    desc: "I worked as a UI Developer at Delta Capital, where I contributed to creating intuitive and visually appealing user interfaces for various web applications. My role involved collaborating closely with UX designers and back-end developers to deliver seamless and responsive designs. I utilized HTML, CSS, JavaScript, and React to ensure that the UI was not only aesthetically pleasing but also functional across different devices and browsers. Working at Delta Capital helped me enhance my skills in UI development and deepened my understanding of creating user-centric digital experiences."
   },
 
   {
@@ -181,7 +181,7 @@ export const resume = [
     icon: <FaGraduationCap />,
     year: 'Jul 2023 - Sept 2023',
     title: 'I took a Front-End course at Route Academy for Courses.',
-    desc: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do tempor incididunt ut labore',
+    desc: 'I successfully completed the Front-End Development Diploma at Route Academy. This course provided me with practical skills and hands-on experience in building user-friendly, responsive websites using HTML, CSS, JavaScript, and React. It helped me strengthen my knowledge of modern web development techniques and best practices, including component-based architecture and state management in React.',
   },
 
 ];
