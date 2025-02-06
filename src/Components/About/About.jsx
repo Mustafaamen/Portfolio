@@ -109,8 +109,42 @@ const About = () => {
               <h3 className="section__subtitle">
                 Personal Info
               </h3>
-              <ul className="info__list grid">
-                <Info />
+              <ul className="info__list ">
+                {/* <Info /> */}
+                <li className="info__item">
+                <span className='info__title'> Name : </span>
+                <span className='info__description'> Mustafa Amen El-hadad </span>
+                </li>
+                <li className="info__item">
+                <span className='info__title'> Age : </span>
+                <span className='info__description'> 25 Years</span>
+                </li>
+                <li className="info__item">
+                <span className='info__title'> Email : </span>
+                <span className='info__description'> Mustafaelhadad241@gmail.com</span>
+                </li>
+                <li className="info__item">
+                <span className='info__title'> Address : </span>
+                <span className='info__description'> Saudi - Riyadh</span>
+                </li>
+                <li className="info__item">
+                <span className='info__title'> Phone : </span>
+                <span className='info__description'> +966553132969</span>
+                </li>
+               
+                <li className="info__item">
+                <span className='info__title'> Nationality : </span>
+                <span className='info__description'> Egyption</span>
+                </li>
+                <li className="info__item info__itemm">
+                <span className='info__title'> Freelance : </span>
+                <span className='info__description'> Available </span>
+                
+                </li>
+                <li className="info__item">
+                <span className='info__title'> Langages : </span>
+                <span className='info__description'> Arabic, English</span>
+                </li>
               </ul>
 
               <motion.a 

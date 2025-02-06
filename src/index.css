@@ -223,7 +223,17 @@
     }
    
     
-    
+    /* جديد */
+    .info__list{
+        display: flex !important;
+        flex-direction: column !important;
+        row-gap: 14px !important;
+        justify-content: space-around !important;
+        align-items:  stretch !important;
+    }
+    .about__container{
+        text-align: center !important;
+    }
   
 }
 
