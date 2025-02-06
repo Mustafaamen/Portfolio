@@ -111,9 +111,9 @@ const About = () => {
               </h3>
               <ul className="info__list ">
                 {/* <Info /> */}
-                <li className="info__item">
+                <li className="info__item ">
                 <span className='info__title'> Name : </span>
-                <span className='info__description'> Mustafa Amen El-hadad </span>
+                <span className='info__description '> Mustafa Amen El-hadad </span>
                 </li>
                 <li className="info__item">
                 <span className='info__title'> Age : </span>
