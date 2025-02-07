@@ -45,7 +45,7 @@ const Certificates = () => {
       <Modal open={openModal1} onClose={() => setOpenModal1(false)} center>
         <div data-aos="fade-up">
           <img src={route} alt="Certificate" className="modal__image" />
-          <h2 data-aos="fade-down">Front-End Diploma at Route Academy</h2>
+          <h2 className='deploma' data-aos="fade-down">Front-End Diploma at Route Academy</h2>
         </div>
       </Modal>
 
@@ -53,7 +53,7 @@ const Certificates = () => {
       <Modal open={openModal2} onClose={() => setOpenModal2(false)} center>
         <div data-aos="fade-up">
           <img src={route2} alt="Certificate" className="modal__image" />
-          <h2 data-aos="fade-down">React.JS Diploma at Route Academy</h2>
+          <h2 className='deploma' data-aos="fade-down">React.JS Diploma at Route Academy</h2>
         </div>
       </Modal>
     </>

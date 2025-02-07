@@ -23,4 +23,8 @@
     max-height: 80vh;
     object-fit: contain;
   }
+  .deploma{
+    font-size: var(--h3-font-size);
+    color: var(--first-color);
+  }
   
