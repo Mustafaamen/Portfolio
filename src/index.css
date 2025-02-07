@@ -215,7 +215,7 @@
 
     .model__close {
         top: 5px !important;
-        left: 5px !important;
+        left:30px !important;
     }
 
     .section__title {
@@ -227,7 +227,7 @@
     .info__list{
         display: flex !important;
         flex-direction: column !important;
-        row-gap: 11px !important;
+        row-gap: 12px !important;
 
         justify-content: space-around !important;
         align-items:  stretch !important;

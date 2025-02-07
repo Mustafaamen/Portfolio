@@ -54,7 +54,7 @@ opacity: .8;
     display: grid;
     place-items: center;
     padding: 15px;
-    z-index: 99999 !important;
+  
 }
 
 
