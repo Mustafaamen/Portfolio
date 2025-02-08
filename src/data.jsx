@@ -20,6 +20,7 @@ import Work8 from './assets/work-8.png';
 import Work9 from './assets/work9.png';
 import Work10 from './assets/work10.png';
 import Work11 from './assets/work11.png';
+import Work12 from './assets/work12.png';
 
 import Theme1 from './assets/purple.png';
 import Theme2 from './assets/red.png';
@@ -553,6 +554,35 @@ export const skills = [
         icon: <FiExternalLink />,
         title: 'Preview : ',
         desc: 'https://mustafaamen.github.io/Rudra/',
+      },
+    ],
+  },
+  {
+    id: 12,
+    img: Work12,
+    title: 'Mealify',
+    link: 'https://mustafaamen.github.io/Mealify/',
+    details: [
+      {
+        icon: <FiFileText />,
+        title: 'Project : ',
+        desc: 'Mealify',
+      },
+      {
+        icon: <FiUser />,
+      
+        title: 'Client : ',
+        desc: 'freelance',
+      },
+      {
+        icon: <FaCode />,
+        title: 'Language : ',
+        desc: ' Html & Css & Bootstrab ',
+      },
+      {
+        icon: <FiExternalLink />,
+        title: 'Preview : ',
+        desc: 'https://mustafaamen.github.io/Mealify/',
       },
     ],
   },
