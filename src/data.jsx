@@ -21,6 +21,8 @@ import Work9 from './assets/work9.png';
 import Work10 from './assets/work10.png';
 import Work11 from './assets/work11.png';
 import Work12 from './assets/work12.png';
+import Work13 from './assets/work13.png';
+import Work15 from './assets/work15.png';
 
 import Theme1 from './assets/purple.png';
 import Theme2 from './assets/red.png';
@@ -330,14 +332,14 @@ export const skills = [
 
   {
     id: 4,
-    img: Work4,
-    title: 'DANIELS:',
-    link: 'https://mustafaamen.github.io/DANIELS/',
+    img: Work13,
+    title: 'Egypt',
+    link: 'https://mustafaamen.github.io/Egypt/',
     details: [
       {
         icon: <FiFileText />,
         title: 'Project : ',
-        desc: 'DANIELS:',
+        desc: 'Egypt',
       },
       {
         icon: <FiUser />,
@@ -347,12 +349,12 @@ export const skills = [
       {
         icon: <FaCode />,
         title: 'Language : ',
-        desc: 'Bootstrap, Responsive',
+        desc: 'Bootstrap , Html, Css',
       },
       {
         icon: <FiExternalLink />,
         title: 'Preview : ',
-        desc: 'https://mustafaamen.github.io/DANIELS/',
+        desc: 'https://mustafaamen.github.io/Egypt/',
       },
     ],
   },
@@ -586,6 +588,65 @@ export const skills = [
       },
     ],
   },
+  {
+    id: 13,
+    img: Work4,
+    title: 'DANIELS',
+    link: 'https://mustafaamen.github.io/DANIELS/',
+    details: [
+      {
+        icon: <FiFileText />,
+        title: 'Project : ',
+        desc: 'DANIELS:',
+      },
+      {
+        icon: <FiUser />,
+        title: 'Client : ',
+        desc: 'freelance',
+      },
+      {
+        icon: <FaCode />,
+        title: 'Language : ',
+        desc: 'Bootstrap, Responsive',
+      },
+      {
+        icon: <FiExternalLink />,
+        title: 'Preview : ',
+        desc: 'https://mustafaamen.github.io/DANIELS/',
+      },
+    ],
+  },
+
+  {
+    id: 14,
+    img: Work15,
+    title: 'LOGIN',
+    link: 'https://mustafaamen.github.io/LOGIN/',
+    details: [
+      {
+        icon: <FiFileText />,
+        title: 'Project : ',
+        desc: 'LOGIN:',
+      },
+      {
+        icon: <FiUser />,
+        title: 'Client : ',
+        desc: 'freelance',
+      },
+      {
+        icon: <FaCode />,
+        title: 'Language : ',
+        desc: 'Java Script',
+      },
+      {
+        icon: <FiExternalLink />,
+        title: 'Preview : ',
+        desc: 'https://mustafaamen.github.io/LOGIN/',
+      },
+    ],
+  },
+
+
   
 ];
 
