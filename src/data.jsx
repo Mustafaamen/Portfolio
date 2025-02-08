@@ -17,6 +17,9 @@ import Work5 from './assets/work-5.png';
 import Work6 from './assets/work-6.png';
 import Work7 from './assets/work-7.png';
 import Work8 from './assets/work-8.png';
+import Work9 from './assets/work9.png';
+import Work10 from './assets/work10.png';
+import Work11 from './assets/work11.png';
 
 import Theme1 from './assets/purple.png';
 import Theme2 from './assets/red.png';
@@ -466,15 +469,15 @@ export const skills = [
     ],
   },
   {
-    id: 8,
-    img: Work8,
-    title: 'Exam && JQ',
-    link: 'https://mustafaamen.github.io/exam-JQ/',
+    id: 9,
+    img: Work9,
+    title: 'Simon',
+    link: 'https://mustafaamen.github.io/simon/',
     details: [
       {
         icon: <FiFileText />,
         title: 'Project : ',
-        desc: 'Jquery',
+        desc: 'Simon',
       },
       {
         icon: <FiUser />,
@@ -485,15 +488,75 @@ export const skills = [
       {
         icon: <FaCode />,
         title: 'Language : ',
-        desc: 'Bootstrab ,Jquery ',
+        desc: 'Bootstrab&Html&Css ',
       },
       {
         icon: <FiExternalLink />,
         title: 'Preview : ',
-        desc: 'https://mustafaamen.github.io/exam-JQ/',
+        desc: 'https://mustafaamen.github.io/simon/',
       },
     ],
   },
+
+  {
+    id: 10,
+    img: Work10,
+    title: 'Kerri',
+    link: 'https://mustafaamen.github.io/Kerri/',
+    details: [
+      {
+        icon: <FiFileText />,
+        title: 'Project : ',
+        desc: 'Kerri',
+      },
+      {
+        icon: <FiUser />,
+      
+        title: 'Client : ',
+        desc: 'freelance',
+      },
+      {
+        icon: <FaCode />,
+        title: 'Language : ',
+        desc: 'Html &Css &Bootstrab ',
+      },
+      {
+        icon: <FiExternalLink />,
+        title: 'Preview : ',
+        desc: 'https://mustafaamen.github.io/Kerri/',
+      },
+    ],
+  },
+  {
+    id: 11,
+    img: Work11,
+    title: 'Rudra',
+    link: 'https://mustafaamen.github.io/Rudra/',
+    details: [
+      {
+        icon: <FiFileText />,
+        title: 'Project : ',
+        desc: 'Rudra',
+      },
+      {
+        icon: <FiUser />,
+      
+        title: 'Client : ',
+        desc: 'freelance',
+      },
+      {
+        icon: <FaCode />,
+        title: 'Language : ',
+        desc: ' Jquery ',
+      },
+      {
+        icon: <FiExternalLink />,
+        title: 'Preview : ',
+        desc: 'https://mustafaamen.github.io/Rudra/',
+      },
+    ],
+  },
+  
 ];
 
 
