@@ -530,6 +530,7 @@ export const skills = [
       },
     ],
   },
+
   {
     id: 11,
     img: Work11,
@@ -550,15 +551,16 @@ export const skills = [
       {
         icon: <FaCode />,
         title: 'Language : ',
-        desc: ' Jquery ',
+        desc: 'Html &Css &Bootstrab ',
       },
       {
         icon: <FiExternalLink />,
         title: 'Preview : ',
-        desc: 'https://mustafaamen.github.io/Rudra/',
+        desc: ' https://mustafaamen.github.io/Rudra/',
       },
     ],
   },
+
   {
     id: 12,
     img: Work12,
