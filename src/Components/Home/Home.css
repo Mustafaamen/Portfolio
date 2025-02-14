@@ -129,9 +129,10 @@
 
 @media screen and (max-width: 768px) {
     .auto__play span {
-        font-size: 24px;
+        font-size: 20px;
 
     }
+   
 }
 
 @media screen and (max-width: 480px) {
