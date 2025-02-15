@@ -23,6 +23,7 @@ import Work11 from './assets/work11.png';
 import Work12 from './assets/work12.png';
 import Work13 from './assets/work13.png';
 import Work15 from './assets/work15.png';
+import Work16 from './assets/work16.png';
 
 import Theme1 from './assets/purple.png';
 import Theme2 from './assets/red.png';
@@ -208,7 +209,7 @@ export const skills = [
   {
     id: 3,
     title: 'Css',
-    percentage: '85',
+    percentage: '90',
   },
 
   {
@@ -326,6 +327,34 @@ export const skills = [
         icon: <FiExternalLink />,
         title: 'Preview : ',
         desc: ' https://mustafaamen.github.io/weather/',
+      },
+    ],
+  },
+  {
+    id: 14,
+    img: Work16,
+    title: 'Tic Tac Toe',
+    link: 'https://mustafaamen.github.io/Game/',
+    details: [
+      {
+        icon: <FiFileText />,
+        title: 'Project : ',
+        desc: 'Tic Tac Toe:',
+      },
+      {
+        icon: <FiUser />,
+        title: 'Client : ',
+        desc: 'freelance',
+      },
+      {
+        icon: <FaCode />,
+        title: 'Language : ',
+        desc: 'React Js',
+      },
+      {
+        icon: <FiExternalLink />,
+        title: 'Preview : ',
+        desc: 'https://mustafaamen.github.io/Game/',
       },
     ],
   },
@@ -619,34 +648,7 @@ export const skills = [
     ],
   },
 
-  {
-    id: 14,
-    img: Work15,
-    title: 'LOGIN',
-    link: 'https://mustafaamen.github.io/LOGIN/',
-    details: [
-      {
-        icon: <FiFileText />,
-        title: 'Project : ',
-        desc: 'LOGIN:',
-      },
-      {
-        icon: <FiUser />,
-        title: 'Client : ',
-        desc: 'freelance',
-      },
-      {
-        icon: <FaCode />,
-        title: 'Language : ',
-        desc: 'Java Script',
-      },
-      {
-        icon: <FiExternalLink />,
-        title: 'Preview : ',
-        desc: 'https://mustafaamen.github.io/LOGIN/',
-      },
-    ],
-  },
+
 
 
   
