@@ -3,6 +3,7 @@ import { portfolio } from '../../data';
 import PortfolioItem from '../PortfolioItem';
 import './Portfolio.css';
 import { motion } from 'framer-motion';
+import PortfolioSlider from '../PortfolioSlider/PortfolioSlider';
 
 const Portfolio = () => {
   const containerVariants = {
@@ -34,6 +35,7 @@ const Portfolio = () => {
 
   return (
     <section className='portfolio section'>
+      <PortfolioSlider/>
       <motion.h2
         className="section__title"
         initial="hidden"
