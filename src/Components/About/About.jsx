@@ -1,6 +1,7 @@
 // import React from 'react'
 // import Info from '../Info'
 // import CV from '../../assets/CV Mustafa Amen Elhadad.pdf'
+
 // import Stats from '../stats'
 // import './About.css'
 // import Skills from '../Skills'
@@ -76,7 +77,7 @@
 
 import React from 'react';
 import Info from '../Info';
-import CV from '../../assets/CV Mustafa Amen Elhadad.pdf';
+import CV from '../../assets/CV MUSTAFA ELHADAD.pdf';
 import Stats from '../stats';
 import './About.css';
 import Skills from '../Skills';
