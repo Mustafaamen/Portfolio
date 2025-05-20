@@ -156,7 +156,16 @@ export const stats = [
 
 export const resume = [
   {
-    id: 1,
+    id:1,
+    category: 'experience',
+    icon: <FaBriefcase />,
+    year: 'Mar 2025 - present',
+    title: 'Al-musanid Tech',
+    desc: 'FrontEnd(Next JS) - On site',
+  },
+
+  {
+    id: 2,
     category: 'experience',
     icon: <FaBriefcase />,
     year: '2024 - PRESENT',
@@ -164,8 +173,9 @@ export const resume = [
     desc:"As a Freelance Front-End Developer, I specialize in crafting responsive, interactive, and user-friendly websites. With expertise in HTML, CSS, JavaScript, and React, I focus on delivering high-quality digital solutions tailored to client needs. Whether it's a personal project or a business website, I work closely with clients to ensure seamless user experiences and modern design. My goal is to transform ideas into functional, beautiful web applications that engage users and drive results."
   },
 
+
   {
-    id: 2,
+    id: 3,
     category: 'experience',
     icon: <FaBriefcase />,
     year: '2024 - 2024',
@@ -174,7 +184,7 @@ export const resume = [
   },
 
   {
-    id: 3,
+    id: 4,
     category: 'education',
     icon: <FaGraduationCap />,
     year: ' Sept 2018 - Jun 2022',
@@ -183,13 +193,14 @@ export const resume = [
   },
 
   {
-    id: 4,
+    id: 5,
     category: 'education',
     icon: <FaGraduationCap />,
     year: 'Jul 2023 - Sept 2023',
     title: 'I took a Front-End course at Route Academy for Courses.',
     desc: 'I successfully completed the Front-End Development Diploma at Route Academy. This course provided me with practical skills and hands-on experience in building user-friendly, responsive websites using HTML, CSS, JavaScript, and React. It helped me strengthen my knowledge of modern web development techniques and best practices, including component-based architecture and state management in React.',
   },
+
 
 ];
 
